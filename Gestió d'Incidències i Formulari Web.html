@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroSupport Manteniment - Gestió d'Incidències</title>
+    <link rel="stylesheet" href="Gestió d'Incidències i Formulari Web.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <span class="logo-icon"></span>
+                <div class="logo-text">
+                    <h1>MicroSupport</h1>
+                    <p>Solucions Informàtiques</p>
+                </div>
+            </div>
+            <div class="company-info">
+                <p>📍 Carrer del Silici, 42, 08010 Barcelona</p>
+                <p>📞 93 456 78 90 ✉️ suport@techfix.es</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inici</a></li>
+                <li><a href="Tarifas.html">Tarifes</a></li>
+                <li><a href="Quiénes somos.html">Qui som</a></li>
+                <li><a href="Contactos.html">Contacte</a></li>
+                <li><a href="Gestió d'Incidències i Formulari Web.html">Envia la teva incidència</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="incidencia" class="form-container">
+            <h2>🛠️ Registre d'Incidència Tècnica</h2>
+            <p>Si us plau, omple el formulari següent perquè puguem gestionar la teva reparació al més aviat possible.
+            </p>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Dades del Client</legend>
+                    <div class="grid-3">
+                        <div class="field">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" placeholder="Ex.: Joan Garcia" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Correu electrònic *</label>
+                            <input type="email" id="email" name="email" placeholder="correu@exemple.cat" required>
+                        </div>
+                        <div class="field">
+                            <label for="tel">Telèfon de contacte *</label>
+                            <input type="tel" id="tel" name="tel" placeholder="600 000 000" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Identificació de l'Equip</legend>
+                    <div class="grid-3">
+                        <div class="field">
+                            <label for="marca">Marca / Model *</label>
+                            <input type="text" id="marca" name="marca" placeholder="Ex.: Dell XPS 13" required>
+                        </div>
+                        <div class="field">
+                            <label for="so">Sistema operatiu</label>
+                            <select id="so" name="so">
+                                <option value="windows">Windows</option>
+                                <option value="linux">Linux</option>
+                                <option value="macos">macOS</option>
+                                <option value="altres">Altres</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label>Tipus d'equip</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="tipus" value="sobremesa"> Sobretaula</label>
+                                <label><input type="radio" name="tipus" value="portatil" checked> Portàtil</label>
+                                <label><input type="radio" name="tipus" value="servidor"> Servidor</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Components possiblement afectats</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="comp" value="disco"> Disc dur (HDD/SSD)</label>
+                        <label><input type="checkbox" name="comp" value="ram"> Memòria RAM</label>
+                        <label><input type="checkbox" name="comp" value="cpu"> Processador (CPU)</label>
+                        <label><input type="checkbox" name="comp" value="gpu"> Targeta gràfica</label>
+                        <label><input type="checkbox" name="comp" value="fuente"> Font d'alimentació</label>
+                        <label><input type="checkbox" name="comp" value="pantalla"> Pantalla</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descripció de l'Avaria</legend>
+                    <div class="field">
+                        <label for="simptomes">Símptomes (què fa l'equip?) *</label>
+                        <textarea id="simptomes" name="simptomes" rows="3"
+                            placeholder="Ex.: No s'encén, es reinicia sol..." required></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="errors">Senyals acústics (beeps) o missatges d'error</label>
+                        <input type="text" id="errors" name="errors" placeholder="Ex.: 3 beeps curts o codi 0x00000...">
+                    </div>
+                    <div class="field">
+                        <label for="accio">Última acció realitzada abans de l'error</label>
+                        <input type="text" id="accio" name="accio"
+                            placeholder="Ex.: Instal·lar un programa, actualització...">
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-enviar">Enviar Incidència</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Horari d'Atenció</h4>
+                <p>De dilluns a divendres: 09:00 h - 19:00 h</p>
+                <p>Dissabtes: 10:00 h - 14:00 h</p>
+            </div>
+            <div class="footer-section">
+                <div class="social-icons">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <p><a href="#">Política de Privacitat</a></p>
+                <p><a href="#">Avís Legal</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MicroSupport Solucions Informàtiques - Tots els drets reservats.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

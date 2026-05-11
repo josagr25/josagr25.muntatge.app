@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MicroSupport - Enviar Incidència</title>
+    <link rel="stylesheet" href="Gestió d'Incidències i Formulari Web.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inici</a></li>
+                <li><a href="Tarifas.html">Tarifes</a></li>
+                <li><a href="Quiénes somos.html">Qui som</a></li>
+                <li><a href="Contactos.html">Contacte</a></li>
+                <li><a href="Gestió d'Incidències i Formulari Web.html">Envia la teva incidència</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-box">
+            <form action="#">
+                <fieldset>
+                    <legend>Dades Personals</legend>
+                    <input type="text" placeholder="Nom" required><br><br>
+                    <input type="email" placeholder="Correu electrònic" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalls de l'Avaria</legend>
+                    <label>Símptomes:</label>
+                    <textarea rows="4" placeholder="Què li passa a l'equip?"></textarea>
+                    <br><br>
+                    <label>Urgència:</label>
+                    <select>
+                        <option>Baixa</option>
+                        <option>Mitjana</option>
+                        <option>Alta (Crítica)</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="btn-enviar">
+                    Següent -->
+                    <a href="Gestió d'Incidències i Formulari Web.html">Envia la teva incidència</a>
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
